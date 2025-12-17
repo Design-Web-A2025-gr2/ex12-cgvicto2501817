@@ -1,64 +1,77 @@
 <!DOCTYPE html>
-
 <html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 09</title>
+    <link rel="stylesheet" href="./css/page2.css">
+</head>
 
-    <head>
-        <meta charset="utf-8">
+<body>
 
-        <title>Exercice 09</title>
+    <header class="entete">
+        <h1>Titre de mon site</h1>
+        Un site <b>super</b> "responsive".
+    </header>
 
-        <link rel="stylesheet" href="./css/page2.css">
-    </head>
+    <nav class="nav-responsive">
 
-    <body>
+    <!-- Bouton hamburger (lien) -->
+    <a href="#menu" class="hamburger" aria-label="Ouvrir le menu">☰</a>
 
-        <header class="entete">
-            <h1>Titre de mon site</h1>
-            Un site <b>super</b> "responsive".
-        </header>
+    <!-- MENU PC (barre) -->
+    <div class="menu-conteneur">
+        <a href="#" class="menu-lien">Lien 1</a>
+        <a href="#" class="menu-lien">Lien 2</a>
+        <a href="#" class="menu-lien">Lien 3</a>
+        <a href="#" class="menu-lien">Lien 4</a>
+    </div>
 
-        <nav class="menu-conteneur">
-            <a href="#" class="menu-lien">Lien 1</a>
-            <a href="#" class="menu-lien">Lien 2</a>
-            <a href="#" class="menu-lien">Lien 3</a>
-            <a href="#" class="menu-lien">Lien 4</a>
-        </nav>
+    <!-- MENU MOBILE (caché, s'ouvre quand on clique sur ☰) -->
+    <div id="menu" class="menu-mobile">
+        <!-- bouton fermer (retour en haut, enlève le target) -->
+        <a href="#" class="fermer" aria-label="Fermer le menu">✕</a>
 
-        <main id="conteneur-principale">
+        <a href="#" class="menu-lien">Lien 1</a>
+        <a href="#" class="menu-lien">Lien 2</a>
+        <a href="#" class="menu-lien">Lien 3</a>
+        <a href="#" class="menu-lien">Lien 4</a>
+    </div>
 
-            <aside class="presentation">
-                <h2>À propos de moi</h2>
-                <img src="img/image_presentation.jpg" class="image-presentation" alt="">
-                <p class="justify">Bonjour je me présente, petit singe grand maitre CSS et bla bla bla ...</p>
-            </aside>
+</nav>
 
-            <div id="conteneur-article">
-                
-                <article>
-                    <h2>TITRE DE L'ARTICLE</h2>
-                    <h5>Description du titre, 12 septembre, 2022</h5>
-                    <div class="article_image" style="height:200px;">Insérer une image intelligente ici</div>
-                    <p>Un peu de texte random ...</p>
-                    <p class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie turpis vehicula, auctor ipsum a, semper enim. In congue tincidunt ultrices. Mauris quam augue, egestas quis eleifend id, imperdiet ac lorem. Etiam quam urna, mattis a arcu vel, ullamcorper consequat est. Curabitur pretium tellus lectus, mattis mollis tortor tristique non. Suspendisse id lectus quis ligula molestie posuere. Cras eleifend lectus vel vestibulum faucibus. Aenean venenatis euismod pharetra. Curabitur metus nunc, scelerisque id viverra et, gravida non dolor.</p> 
-                </article>
-                
-                <article>
-                    <h2>TITRE DE L'ARTICLE</h2>
-                    <h5>Description du titre, Dec 7, 2017</h5>
-                    <div class="article_image" style="height:200px;">Insérer une image intelligente ici</div>
-                    <p>Un peu de texte..</p>
-                    <p class="justify">Morbi vulputate, libero ac interdum malesuada, sapien lacus lacinia purus, at mollis massa mi quis nulla. Quisque dignissim et neque non rhoncus. Nulla porta arcu eu nisl pulvinar blandit. Aliquam ex tortor, consectetur nec blandit quis, tincidunt ut mauris. Curabitur nec faucibus nunc. Nunc ut scelerisque neque. Proin pharetra sodales enim posuere tincidunt. Aliquam auctor risus ac sem pharetra, vehicula eleifend arcu volutpat. Curabitur tincidunt sodales magna placerat sodales. Suspendisse potenti. Donec ut sodales enim. Mauris at suscipit est, a tempor velit. Morbi congue scelerisque mauris nec faucibus. Curabitur nec molestie lectus. </p>
-                </article>
-                
-            </div>
+    <main id="conteneur-principale">
 
-        </main>
+        <aside class="presentation">
+            <h2>À propos de moi</h2>
+            <img src="img/image_presentation.jpg" class="image-presentation" alt="">
+            <p class="justify">Bonjour je me présente, petit singe grand maitre CSS et bla bla bla ...</p>
+        </aside>
 
-        <footer>
-            Un exercice par Mathieu Fréchette
-        </footer>
+        <div id="conteneur-article">
 
+            <article>
+                <h2>TITRE DE L'ARTICLE</h2>
+                <h5>Description du titre, 12 septembre, 2022</h5>
+                <div class="article_image" style="height:200px;">Insérer une image intelligente ici</div>
+                <p>Un peu de texte random ...</p>
+                <p class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
 
-    </body>
+            <article>
+                <h2>TITRE DE L'ARTICLE</h2>
+                <h5>Description du titre, Dec 7, 2017</h5>
+                <div class="article_image" style="height:200px;">Insérer une image intelligente ici</div>
+                <p>Un peu de texte..</p>
+                <p class="justify">Morbi vulputate, libero ac interdum malesuada...</p>
+            </article>
 
+        </div>
+
+    </main>
+
+    <footer>
+        Un exercice par Mathieu Fréchette
+    </footer>
+
+</body>
 </html>

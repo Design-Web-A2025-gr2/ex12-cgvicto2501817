@@ -82,3 +82,68 @@ footer {
     color: white;
     text-align: right;
 }
+
+/* ==========================
+   HAMBURGER (par défaut caché)
+========================== */
+
+.entete {
+    position: relative;
+}
+.hamburger {
+    display: none; /* visible seulement <=800 */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 42px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Menu mobile caché par défaut */
+.menu-mobile {
+    display: none;
+    background-color: #4c1d31;
+    flex-direction: column;
+}
+
+/* Quand on clique -> #menu devient target */
+#menu:target {
+    display: flex;
+}
+
+/* bouton fermer */
+.fermer {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+/* ==========================
+   RESPONSIVE <= 800px
+========================== */
+@media screen and (max-width: 800px) {
+
+    /* menu PC disparaît */
+    .menu-conteneur {
+        display: none;
+    }
+
+    /* hamburger apparaît */
+    .hamburger {
+        display: inline-block;
+    }
+
+    /* cache “À propos de moi” */
+    .presentation {
+        display: none;
+    }
+
+    /* la grille devient 1 colonne */
+    #conteneur-principale {
+        grid-template-columns: 1fr;
+        grid-template-areas: "articles";
+    }
+}
